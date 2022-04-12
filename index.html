@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio Grid</title>
+
+    <!-- inizio stile -->
+    <style>
+
+    * {
+    font-family: sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+    }
+
+    .container-calcolatrice {
+    display:grid;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    width:400px;
+    margin:0 auto;
+    grid-template-columns: repeat (4,fr);
+    grid-template-areas: 
+    "display display display display"
+    "piu meno per diviso"
+    "sette otto nove uguale"
+    "quattro cinque sei uguale"
+    "uno due tre uguale"
+    "zero punto ac uguale";
+
+
+    box-shadow: -1px 2px 5px -1px rgba(0,0,0,0.59);
+    -webkit-box-shadow: -1px 2px 5px -1px rgba(0,0,0,0.59);
+    -moz-box-shadow: -1px 2px 5px -1px rgba(0,0,0,0.59);
+    
+    }
+
+    .display {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    padding-right:20px;
+    text-align: right;
+    grid-area:display;
+    background-color:#394348 ;
+    color:#fff;
+    }
+
+    .uguale {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-right-radius: 25px;
+    grid-area:uguale;
+    background-color: #ff656e;
+    border-left: 2px solid #7b92a3;
+    }
+
+    .piu {
+    grid-area:piu;
+    background-color: #cbd7df;
+    border-bottom: 2px solid #7b92a3;
+    }
+
+    .meno {
+    grid-area:meno;
+    background-color: #cbd7df;
+    border-bottom: 2px solid #7b92a3;
+    border-left: 2px solid #7b92a3;
+    }
+
+    .per {
+    grid-area:per;
+    background-color: #cbd7df;
+    border-bottom: 2px solid #7b92a3;
+    border-left: 2px solid #7b92a3;
+    }
+
+    .diviso {
+    grid-area:diviso;
+    background-color: #cbd7df;
+    border-bottom: 2px solid #7b92a3;
+    border-left: 2px solid #7b92a3;
+    }
+
+
+    .sette {
+    grid-area:sette;
+    background-color:#ecf0f3;
+    border-bottom: 2px solid #7b92a3;
+    }
+
+    .otto {
+    grid-area:otto;
+    background-color:#ecf0f3;
+    border-bottom: 2px solid #7b92a3;
+    border-left: 2px solid #7b92a3;
+    }
+
+    .nove {
+    grid-area:nove;
+    background-color:#ecf0f3;
+    border-bottom: 2px solid #7b92a3;
+    border-left: 2px solid #7b92a3;
+    }
+
+    .quattro {
+    grid-area:quattro;
+    background-color:#ecf0f3;
+    border-bottom: 2px solid #7b92a3;
+    }
+
+    .cinque {
+    grid-area:cinque;
+    background-color:#ecf0f3;
+    border-bottom: 2px solid #7b92a3;
+    border-left: 2px solid #7b92a3;
+    }
+
+    .sei {
+    grid-area:sei;
+    background-color:#ecf0f3;
+    border-bottom: 2px solid #7b92a3;
+    border-left: 2px solid #7b92a3;
+    }
+
+    .uno {
+    grid-area:uno;
+    background-color:#ecf0f3;
+    border-bottom: 2px solid #7b92a3;
+    }
+
+    .due {
+    grid-area:due;
+    background-color:#ecf0f3;
+    border-bottom: 2px solid #7b92a3;
+    border-left: 2px solid #7b92a3;
+    }
+
+    .tre {
+    grid-area:tre;
+    background-color:#ecf0f3;
+    border-bottom: 2px solid #7b92a3;
+    border-left: 2px solid #7b92a3;
+    }
+
+    .zero {
+    grid-area:zero;
+    background-color:#ecf0f3;
+    border-bottom-left-radius: 25px;
+    }
+
+    .punto {
+    grid-area:punto;
+    background-color:#ecf0f3;
+    border-left: 2px solid #7b92a3;
+    }
+
+    .ac {
+    grid-area:ac;
+    background-color:#ecf0f3;
+    border-left: 2px solid #7b92a3;
+    }
+
+    .box {
+    height:70px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    }
+    </style>
+</head>
+<body>
+
+
+    <div class="container-calcolatrice">
+        
+        <div class="display"><h1>0</h1></div>
+
+        <div class="box piu">+</div>
+        <div class="box meno">-</div>
+        <div class="box per">x</div>
+        <div class="box diviso">÷</div>
+
+        <div class="box sette">7</div>
+        <div class="box otto">8</div>
+        <div class="box nove">9</div>
+
+        <div class="box quattro">4</div>
+        <div class="box cinque">5</div>
+        <div class="box sei">6</div>
+
+        <div class="box uno">1</div>
+        <div class="box due">2</div>
+        <div class="box tre">3</div>
+
+        <div class="box zero">0</div>
+        <div class="box punto">.</div>
+        <div class="box ac">AC</div>
+        
+        <div class="uguale">=</div>
+        
+    </div>
+
+    
+</body>
+</html>
